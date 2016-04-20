@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/editNumber"
+    android:inputType="number"
+    android:textColor="@color/material_black"
+    android:maxLength="2"
+    android:maxWidth="56dp"
+    android:ellipsize="start"
+    android:layout_gravity="center_horizontal"
+    android:textSize="28sp">
+</EditText>

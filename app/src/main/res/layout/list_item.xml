@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingStart="10dp"
+    android:paddingRight="16dp"
+    android:paddingEnd="16dp"
+    android:id="@+id/list_item_layout"
+    android:descendantFocusability="afterDescendants"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textSize="26sp"
+        android:id="@+id/role_label"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:clickable="true"
+        android:longClickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:layout_weight="100" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/subtract"
+        android:textColor="?android:attr/textColorPrimary"
+        android:minWidth="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="28sp"
+        android:id="@+id/amount"
+        android:layout_gravity="center"
+        android:minWidth="55dp"
+        android:gravity="center_horizontal"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/add"
+        android:layout_gravity="center_vertical"
+        android:textColor="?android:attr/textColorPrimary"
+        android:minWidth="48dp" />
+
+</LinearLayout>

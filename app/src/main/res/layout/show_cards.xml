@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.caddosierra.mafiaparty.game.ShowCards"
+        android:longClickable="true"
+        android:id="@+id/card_display">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_role_initial"
+            android:id="@+id/role"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:longClickable="false"
+            android:textColor="?android:attr/textColorPrimary"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Role:"
+            android:id="@+id/role_label"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"
+            android:layout_above="@+id/role"
+            android:layout_centerHorizontal="true"
+            android:textColor="?android:attr/textColorPrimary"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seen_text"
+            android:id="@+id/seen"
+            android:layout_below="@+id/player_number"
+            android:layout_centerHorizontal="true"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_player_label"
+            android:id="@+id/next_player"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="nextPlayer"
+            android:padding="20dp"
+            android:textColor="?android:attr/textColorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player Number"
+            android:id="@+id/player_number"
+            android:textSize="22sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="?android:attr/textColorPrimary"/>
+    </RelativeLayout>
+
+</LinearLayout>

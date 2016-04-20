@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="34dp"
+    android:paddingStart="34dp"
+    android:paddingRight="68dp"
+    android:paddingEnd="68dp"
+    android:id="@+id/list_item_layout">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:text="Mafia"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        android:id="@+id/role_label"
+        android:textColor="?android:attr/textColorPrimary"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_weight="100"
+        android:longClickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="34dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/subtract"
+        android:textSize="20sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:minHeight="60dp"
+        android:minWidth="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="36sp"
+        android:id="@+id/amount"
+        android:layout_gravity="center"
+        android:minWidth="80dp"
+        android:gravity="center_horizontal"
+        android:textColor="?android:attr/textColorPrimary"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/add"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:minWidth="60dp"
+        android:minHeight="60dp" />
+
+</LinearLayout>

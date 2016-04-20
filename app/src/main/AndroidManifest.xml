@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.caddosierra.mafiaparty" >
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".game.NewGame"
+            android:label="@string/title_activity_new_game"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.caddosierra.mafiaparty.MainActivity" />
+        </activity>
+        <activity
+            android:name=".game.ShowCards"
+            android:description="@string/title_activity_day_timer"
+            android:label="@string/title_activity_show_cards"
+            android:parentActivityName=".game.NewGame" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".game.NewGame" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.caddosierra.mafiaparty.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Rules"
+            android:label="@string/title_activity_rules"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.caddosierra.mafiaparty.MainActivity" />
+        </activity>
+        <activity
+            android:name=".timer.DayTimer"
+            android:label="@string/title_activity_day_timer"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppThemeTimer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.caddosierra.mafiaparty.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".timer.DayTimerService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+
+</manifest>

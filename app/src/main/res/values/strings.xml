@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Mafia Party</string>
+    <string name="title_activity_new_game">Create Game</string>
+    <string name="title_activity_show_cards">Show Cards</string>
+    <string name="title_activity_day_timer">Day Timer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_save">Save Setup</string>
+    <string name="action_load">Load Setup</string>
+
+    <string name="create_game">Create Game</string>
+    <string name="show_rules">View Rules</string>
+    <string name="day_timer">Day Timer</string>
+
+    <string name="default_player_count">80</string>
+    <string name="players_label">Total players</string>
+    <string name="start_label">Start</string>
+    <string name="editable_label">Set the amount of each role you want.</string>
+    <string name="add_label">Add a new role</string>
+
+    <string name="next_player_label">Next Player</string>
+    <string name="view_role_initial">Tap and hold to view your role.</string>
+    <string name="seen_text">Unseen</string>
+
+    <!-- Timer Strings -->
+    <string name="default_time">00:00</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+
+    <!-- Settings Strings -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_theme">Dark Theme</string>
+    <string name="pref_theme_summ">Use a dark theme throughout the app (May require restart to behave properly)</string>
+    <string name="title_activity_rules">Rules</string>
+
+
+    <!-- Rules Strings -->
+    <string name="rules_title1">How to Play Mafia</string>
+    <string name="rules_html">
+        <![CDATA[
+        <h1>What Is Mafia?</h1>
+		<p>The game of Mafia is about convincing others, about being able to lie believably, and about being able to figure out if other people are lying. It will reveal a lot about players to each other, and works best if the players know a little bit about each other first. It is tremendous fun if the players have a sense of humor, or if they love to debate.</p>
+		<p>The setting is a once peaceful town which has been invaded by&nbsp;dark forces of corruption - the<strong>&nbsp;Mafia</strong>.</p>
+		<p>The Mafia&#39;s sole purpose is to murder the productive citizens in their bed. They have free reign of the town at night, but by day they appear to be normal citizens.</p>
+		<p>As a response to these terrible events, the townspeople have hired a<strong>&nbsp;Detectve</strong>, whose job is to remain disguised while attempting to root out the members of the Mafia.</p>
+		<p>There is also one more hero they can look up to, the <strong>Doctor</strong>. They have the ability to save a person&#39;s life when they are attacked by the Mafia.</p>
+		<p>This is the standard setup, and can vary greatly depending on desired play style.</p>
+		<p>&nbsp;</p>
+
+		<h1>Game Rules</h1>
+		<h4>Game Setup</h4>
+		<p>The game of Mafia is usually played by an odd number of people. Good numbers are 9, 11, or 13. Players are either&nbsp;<strong>townspeople</strong>&nbsp;or&nbsp;<strong>Mafia</strong>. In addition, the <strong>Detective</strong> and the <strong>Doctor</strong> make up the townspeople. Who plays which role is determined at random (Helpfully provided by this application). One method for determining who is who is to use cards: red cards for the mafia, black cards for townspeople, and a black king or Jack for the Detective and Doctor. <strong>Players may not show their cards to others. </strong>This app takes care of that for you.</p>
+		<p>The number of Mafia and townspeople can vary, depending on which side is winning more often:</p>
+		<p>&nbsp;</p>
+		<p>8 Players, 2 Mafia - Even</p>
+		<p>9 Players, 3 Mafia - Even</p>
+		<p>9 Players, 2 Mafia - Leans Town</p>
+		<p>11 Players, 3 Mafia - Even</p>
+		<p>11 Players, 4 Mafia - Leans Mafia</p>
+		<p>13 Players, 3 Mafia - Leans Town</p>
+		<p>13 Players, 4 Mafia - Even</p>
+		<p>13 Players, 5 Mafia - Leans Town</p>
+		<p>&nbsp;</p>
+		<p>Starting with 3 Mafia is generally recommended.</p>
+
+		<h4>Order of Play</h4>
+		<p>The game is run and managed by a <strong>Moderator</strong>.&nbsp;There is a &quot;Night 0&quot; in which nothing actually occurs, but is required so that some players know who their friends are. Before the game begins, everyone closes their eyes and the&nbsp;Moderator asks the Mafia to open their eyes and identify each other. They then close their eyes and the Moderator asks the Detective the same thing, so that the Moderator knows who they are. And finally this is done for the Doctor. This is done so that the Moderator knows who is who in the setup of the game, and so that the Mafia do not accidentally kill eachother during the first day.</p>
+		<p>The game takes place over the duration of several &quot;day&quot; and &quot;night&quot; phases. Play begins at the start of the first &quot;day&quot;, and proceeds as follows:</p>
+		<p>1. Everyone discusses who might be in the Mafia. Eventually, a vote of majority is called and the (un)lucky candidate is lynched. Once lynched, the role of the person killed is announced to the town.&nbsp;Any person killed can no longer communicate with the town.</p>
+		<p>2. Night falls. Everyone goes to sleep (by closing their eyes).</p>
+		<p>3. The Moderator tells the members of the Mafia to open their eyes. The members of the Mafia then select someone they will murder, by pointing at people until they all agree on one. The Mafia then close their eyes.</p>
+		<p>4. The Moderator tells the Detective to open their&nbsp;eyes. If there is nobody as a Detective, skip this step.&nbsp;The Detective&nbsp;then points at a suspect. The Moderator nods &quot;yes&quot; if that person in the Mafia, or &quot;no&quot; if they are innocent. The Detective&nbsp;then closes his eyes.</p>
+		<p>5. The Moderator asks the Doctor to open their eyes. If there is no Doctor, skip this step. The Doctor can then point at a person they would like to &quot;save&quot;. The Doctor closes their eyes. If they pointed at a person that the Mafia also pointed at to kill, then this person will be saved and not die.</p>
+		<p>6. The Moderator announces the coming of the morning, and can tell a story or provide flavor for what happened during the night (without giving away roles). They tell who died and what their role was to all of the townspeople.</p>
+		<p>7. The next day begins along with discussion and the cycle continues until a winning condition is met.</p>
+
+		<h4>Winning Conditions</h4>
+		<p>The game is over when:</p>
+		<p>-All of the Mafia have been eliminated.&nbsp;<strong>The townspeople win</strong></p>
+		<p>-There are an equal number of townspeople and Mafia at the end of a &quot;day&quot;.&nbsp;<strong>The Mafia wins</strong></p>
+
+		<h1>Play Hints</h1>
+		<h4>Calling a Vote</h4>
+		<p>During the day, the townspeople get to vote on who to run out of town. At any point during the discussion, someone can call a vote by saying &quot;I vote So-and-So is a Mafia and should be run out of town.&quot; If more than half the living players agree, then the elected person is unceremoniously removed from the game. It&#39;s good for the town to&nbsp;always be an odd number of players during the day, so a vote will not end in a deadlock. Voting and debate&nbsp;may become heated. That&#39;s&nbsp;where the fun lies!</p>
+		<h4>The First Day</h4>
+		<p>During the first day, members of the Mafia are informed about who is a Mafia member or not. The person to get voted out by the town is pretty random, so it&#39;s up to everyone to make a good, convincing first statement that will result in them not being voted out.</p>
+		<p>Once the first night falls, though, the Mafia will be able to act in a much mure unified way.</p>
+		<h4>The Detective</h4>
+		<p>The Detective&nbsp;has no way to prove their role, since players are not allowed to show their cards to one another to prove they are what they say there are. Admitting one is the Detective can result in a swift death in the middle of the night, unless only one member of the Mafia was left alive. However, admitting so can also convince the townspeople to lynch somebody that the Detective had learned was a Mafia member. This is dangerous because any other Mafia will then know who the Detective is.</p>
+		<h4>The Doctor</h4>
+		<p>Arguably a crucial role for the town in some situations, the Doctor is very similar to the Detective in that they cannot prove their roles. However if the Detective does come out to the town as a Detective, then usually it is a good play for the Doctor to save that person during the night, so that the Mafia cannot kill them. Doctors can target themselves to be saved, but only once during the span of the game.</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>This rules page was modified from: <a href="http://toast.topped-with-meat.com/connector/mafia.html">http://toast.topped-with-meat.com/connector/mafia.html</a></p>
+        ]]>
+    </string>
+    <string name="title_activity_loltest">loltest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

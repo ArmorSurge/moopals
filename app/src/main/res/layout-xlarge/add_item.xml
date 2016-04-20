@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"     
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="94dp"
+    android:paddingRight="94dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_label"
+        android:textSize="32sp"
+        android:minHeight="60dp"
+        android:onClick="addItem"
+        android:typeface="normal"
+        android:textStyle="normal"
+        android:textColor="?android:attr/textColorPrimary"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

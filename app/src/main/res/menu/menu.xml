@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_clear" android:title="@string/action_clear"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_reset" android:title="@string/action_reset"
+        android:orderInCategory="101" app:showAsAction="never" />
+
+    <item android:id="@+id/action_save" android:title="@string/action_save"
+        android:orderInCategory="102" app:showAsAction="never" />
+
+    <item android:id="@+id/action_load" android:title="@string/action_load"
+        android:orderInCategory="103" app:showAsAction="never" />
+</menu>

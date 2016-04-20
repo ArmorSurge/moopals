@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/material_red500</item>
+        <item name="colorPrimaryDark">@color/material_red700</item>
+        <item name="colorAccent">@color/material_green400</item>
+        <item name="colorContainer">@color/material_background</item>
+        <item name="colorCard">@color/material_grey50</item>
+        <item name="android:colorBackground">@color/material_grey100</item>
+        <item name="android:textColorPrimary">@color/material_text</item>
+        <item name="android:textColorSecondary">@color/material_secondary_text</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.NoActionBar" >
+        <item name="colorPrimary">@color/material_red500</item>
+        <item name="colorPrimaryDark">@color/material_red700</item>
+        <item name="colorAccent">@color/material_green400</item>
+        <item name="colorContainer">#303030</item>
+        <item name="colorCard">#424242</item>
+        <item name="android:textColorPrimary">@color/material_white</item>
+        <item name="android:textColorSecondary">@color/material_white_secondary_text</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppThemeTimer" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="colorPrimary">@color/material_blue500</item>
+        <item name="colorPrimaryDark">@color/material_blue700</item>
+        <item name="colorAccent">@color/material_green400</item>
+        <item name="android:textColorPrimary">@color/material_white</item>
+        <item name="android:windowBackground">@color/material_blue500</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="TimerToolbar" parent="Theme.AppCompat" >
+        <item name="colorPrimary">@color/material_blue500</item>
+        <item name="android:textColorSecondary">@color/material_white</item>
+    </style>
+
+    <style name="LightToolbar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/material_red500</item>
+        <item name="android:textColorSecondary">@color/material_white</item>
+    </style>
+
+    <style name="LightPopup" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/material_text</item>
+        <item name="android:colorBackground">@color/material_white</item>
+    </style>
+
+    <style name="DarkPopup" parent="Theme.AppCompat">
+        <item name="android:textColor">@color/material_white</item>
+    </style>
+
+</resources>

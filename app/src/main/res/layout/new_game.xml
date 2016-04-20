@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/new_game_container">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:id="@+id/container">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/players"
+            android:text="@string/default_player_count"
+            android:textSize="36sp"
+            android:minWidth="40dp"
+            android:layout_below="@+id/playersLabel"
+            android:gravity="center_horizontal"
+            android:layout_alignLeft="@+id/playersLabel"
+            android:layout_alignStart="@+id/playersLabel"
+            android:layout_alignRight="@+id/playersLabel"
+            android:layout_alignEnd="@+id/playersLabel"
+            android:textColor="?android:attr/textColorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/players_label"
+            android:id="@+id/playersLabel"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="38dp"
+            android:textColor="?android:attr/textColorPrimary"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_below="@+id/players"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="10dp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_label"
+            android:id="@+id/start"
+            android:onClick="startDisplay"
+            android:layout_alignBottom="@+id/players"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="47dp"
+            android:padding="18dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:focusable="false" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sbPosition"
+            android:layout_below="@+id/players">
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+</LinearLayout>
