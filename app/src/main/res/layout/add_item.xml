@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingLeft="20dp"
     android:paddingRight="20dp">
@@ -10,18 +9,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_label"
-        android:textSize="22sp"
-        android:minHeight="?android:attr/listPreferredItemHeightSmall"
-        android:typeface="normal"
-        android:textStyle="normal"
-        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:gravity="center_vertical"
+        android:minHeight="?android:listPreferredItemHeightSmall"
+        android:onClick="addItem"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
-        android:clickable="true"
-        android:background="?android:attr/selectableItemBackground"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="12dp"
-        android:onClick="addItem" />
-
+        android:text="@string/add_label"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
 </LinearLayout>

@@ -2,4 +2,11 @@
 <resources>
     <attr name="colorContainer" format="reference|color"/>
     <attr name="colorCard" format="reference|color"/>
+    <attr name="themedMoreDrawable" format="reference"/>
+    <attr name="themedDeleteDrawable" format="reference"/>
+    <attr name="themedEditDrawable" format="reference"/>
+    <attr name="themedChevronLeftDrawable" format="reference" />
+    <attr name="themedChevronRightDrawable" format="reference"/>
+    <attr name="themedAccentedButton" format="reference" />
+    <attr name="themedFlatButton" format="reference" />
 </resources>

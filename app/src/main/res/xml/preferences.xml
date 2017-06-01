@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <CheckBoxPreference
-        android:key="pref_theme"
-        android:title="@string/pref_theme"
-        android:summary="@string/pref_theme_summ"
-        android:defaultValue="false"
-    />
+    <PreferenceCategory android:title="@string/general_settings">
 
-    <Preference android:title="Donate"
-        android:key="pref_donate"
-        android:summary="Donate to the developer." />
+        <ListPreference
+            android:key="pref_theme_option"
+            android:title="@string/pref_theme"
+            android:summary="@string/pref_theme_summ"
+            android:entries="@array/theme_options"
+            android:entryValues="@array/theme_options_values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="New Game Options">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="Load Last Setup Saved"
+            android:summary="Automatically load the last setup saved. If not, then load the default roles."
+            android:key="pref_load_last_saved" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/app_info_title">
+
+        <Preference
+            android:title="@string/app_developer_title"
+            android:summary="@string/developer"/>
+
+        <Preference
+            android:key="pref_app_version"
+            android:title="@string/app_version_title"
+            android:summary="(version could not be found)" />
+
+        <Preference
+            android:key="pref_leave_rating"
+            android:title="Rate app!" />
+
+        <Preference
+            android:title="Special Message"
+            android:summary="Hope you have a really great day! \n\nPlease send your feedback, requests, and crash reports to mahoneysoftdev@gmail.com" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

@@ -2,6 +2,7 @@ package com.caddosierra.mafiaparty;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.v4.app.NavUtils;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,10 +20,8 @@ public class Rules extends AppCompatActivity {
 
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        Boolean darkTheme = preferences.getBoolean("pref_theme", false);
-
-        if(darkTheme)
-            setTheme(R.style.AppThemeDark);
+        String themeOption = preferences.getString("pref_theme_option", "0");
+        setTheme(new ThemeManager(themeOption).getThemeId());
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rules);
@@ -32,7 +31,6 @@ public class Rules extends AppCompatActivity {
 
         assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         TextView htmlText = (TextView) findViewById(R.id.html_text);
         htmlText.setText(Html.fromHtml(getString(R.string.rules_html)));

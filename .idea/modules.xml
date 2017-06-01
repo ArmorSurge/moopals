@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MafiaParty.iml" filepath="$PROJECT_DIR$/MafiaParty.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mafia Party.iml" filepath="$PROJECT_DIR$/Mafia Party.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

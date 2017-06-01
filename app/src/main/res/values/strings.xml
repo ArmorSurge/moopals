@@ -1,5 +1,9 @@
 <resources>
+    <string name="example_text">Sample Text</string>
+
     <string name="app_name">Mafia Party</string>
+    <string name="developer">Mahoneysoft Ltd.</string>
+
     <string name="title_activity_new_game">Create Game</string>
     <string name="title_activity_show_cards">Show Cards</string>
     <string name="title_activity_day_timer">Day Timer</string>
@@ -15,6 +19,7 @@
     <string name="show_rules">View Rules</string>
     <string name="day_timer">Day Timer</string>
 
+
     <string name="default_player_count">80</string>
     <string name="players_label">Total players</string>
     <string name="start_label">Start</string>
@@ -25,6 +30,9 @@
     <string name="view_role_initial">Tap and hold to view your role.</string>
     <string name="seen_text">Unseen</string>
 
+    <!-- Load/Save Dialog Strings -->
+    <string name="no_saved_setup_text">You have not saved any setups! Customize your setup and then save it. It will be here when you come back.</string>
+
     <!-- Timer Strings -->
     <string name="default_time">00:00</string>
     <string name="start">Start</string>
@@ -32,12 +40,26 @@
 
     <!-- Settings Strings -->
     <string name="title_activity_settings">Settings</string>
-    <string name="pref_theme">Dark Theme</string>
-    <string name="pref_theme_summ">Use a dark theme throughout the app (May require restart to behave properly)</string>
-    <string name="title_activity_rules">Rules</string>
+    <string name="general_settings">General Settings</string>
+    <string name="pref_theme">Select Theme</string>
+    <string name="pref_theme_summ">Changes will take place upon leaving the settings screen.</string>
+    <string-array name="theme_options">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>AMOLED Black</item>
+    </string-array>
+    <string-array name="theme_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="app_info_title">Application Information</string>
+    <string name="app_version_title">App Version</string>
+    <string name="app_developer_title">Developer</string>
 
 
     <!-- Rules Strings -->
+    <string name="title_activity_rules">Rules</string>
     <string name="rules_title1">How to Play Mafia</string>
     <string name="rules_html">
         <![CDATA[
@@ -99,8 +121,5 @@
         ]]>
     </string>
     <string name="title_activity_loltest">loltest</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

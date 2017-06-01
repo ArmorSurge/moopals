@@ -1,79 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
     android:orientation="vertical"
-    android:id="@+id/new_game_container">
+    android:id="@+id/new_game_container"
+    android:background="?colorContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <include layout="@layout/toolbar"/>
+    <include layout="@layout/toolbar" />
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <RelativeLayout
+        android:id="@+id/new_game_r_layout"
         android:clickable="false"
-        android:id="@+id/container">
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/players"
-            android:text="@string/default_player_count"
-            android:textSize="36sp"
-            android:minWidth="40dp"
-            android:layout_below="@+id/playersLabel"
+            android:textSize="36.0sp"
+            android:textColor="?android:textColorPrimary"
             android:gravity="center_horizontal"
-            android:layout_alignLeft="@+id/playersLabel"
-            android:layout_alignStart="@+id/playersLabel"
-            android:layout_alignRight="@+id/playersLabel"
-            android:layout_alignEnd="@+id/playersLabel"
-            android:textColor="?android:attr/textColorPrimary"/>
-
-        <TextView
+            android:id="@+id/players"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/players_label"
+            android:minWidth="40dp"
+            android:text="@string/default_player_count"
+            android:layout_below="@+id/playersLabel"
+            android:layout_alignLeft="@id/playersLabel"
+            android:layout_alignStart="@id/playersLabel"
+            android:layout_alignRight="@id/playersLabel"
+            android:layout_alignEnd="@id/playersLabel" />
+
+        <TextView android:textColor="?android:textColorPrimary"
             android:id="@+id/playersLabel"
-            android:layout_marginTop="16dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="38dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="38dp"
-            android:textColor="?android:attr/textColorPrimary"/>
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/players_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
 
-        <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/listView"
-            android:layout_below="@+id/players"
-            android:imeOptions="actionDone"
+        <android.support.v7.widget.RecyclerView
+            android:textColor="?android:textColorPrimary"
+            android:id="@+id/ng_recycler_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:layout_marginTop="10dp"
-            android:textColor="?android:attr/textColorPrimary" />
+            android:layout_below="@id/players"
+            android:imeOptions="actionDone"
+            android:focusableInTouchMode="true"/>
 
-        <Button
+        <Button android:theme="?themedAccentedButton"
+            android:id="@+id/start"
+            android:padding="18dp"
+            android:focusable="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/start_label"
-            android:id="@+id/start"
-            android:onClick="startDisplay"
-            android:layout_alignBottom="@+id/players"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginEnd="47dp"
             android:layout_marginRight="47dp"
-            android:padding="18dp"
-            android:textColor="?android:attr/textColorPrimary"
-            android:focusable="false" />
+            android:layout_marginEnd="47dp"
+            android:text="@string/start_label"
+            android:layout_alignBottom="@id/players"
+            android:layout_alignParentRight="true"
+            android:onClick="startDisplay" />
 
         <android.support.design.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
             android:id="@+id/sbPosition"
-            android:layout_below="@+id/players">
-        </android.support.design.widget.CoordinatorLayout>
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/players"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
+
 </LinearLayout>
